@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components_app/screen/listview_screen.dart';
+import 'package:flutter_components_app/screen/listview2_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: ListView1(),
+      home: ListView2(),
     );
   }
 }
