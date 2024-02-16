@@ -1,15 +1,39 @@
 import 'package:flutter/material.dart';
 
 class ListView2 extends StatelessWidget {
-  final options = const ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
+  final options = const [
+    'Goku',
+    'Veggeta',
+    'Gohan',
+    'Trunks',
+    'Goten',
+    'Piccolo',
+    'Krillin',
+    'Yamcha',
+    'Bulma',
+    'Master Roshi',
+    'Dende',
+    'Kami',
+    'Pilaf',
+    'Mai',
+    'Shu',
+    'Bardock',
+    'Raditz',
+    'Nappa',
+    'Vegeta',
+    'Frieza',
+    'Cell',
+    'Majin Buu',
+    'Beerus',
+    'Whis',
+  ];
   const ListView2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple,
-        title: const Text('ListView Example 2'),
-      ),
+          backgroundColor: Colors.orange,
+          title: const Text('Dragon Ball Z Characters')),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
                 title: Text(options[index]),
