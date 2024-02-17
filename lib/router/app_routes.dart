@@ -33,6 +33,15 @@ class AppRoutes {
         icon: Icons.credit_card),
   ];
 
+  static Map<String, Widget Function(BuildContext)> getAppRoutes() {
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
+
+    for (var option in menuOptions) {
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
+    }
+    return appRoutes;
+  }
+
   static Map<String, Widget Function(BuildContext)> routes = {
     'home': (BuildContext context) => const HomeScreen(),
     'listview': (BuildContext context) => ListView(),

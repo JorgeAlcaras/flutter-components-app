@@ -31,9 +31,7 @@ class ListView2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: Colors.orange,
-          title: const Text('Dragon Ball Z Characters')),
+      appBar: AppBar(title: const Text('Dragon Ball Z Characters')),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
                 title: Text(options[index]),
