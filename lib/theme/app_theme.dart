@@ -27,5 +27,15 @@ class AppTheme {
     iconTheme: const IconThemeData(
       color: global,
     ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: global,
+    ),
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        foregroundColor: global,
+        backgroundColor: global,
+      ),
+    ),
   );
 }

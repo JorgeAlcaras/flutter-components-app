@@ -10,7 +10,7 @@ class CustomCard1 extends StatelessWidget {
     return Card(
         child: Column(
           children: [
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.photo_album, color: AppTheme.global),
               title: Text('Soy el titulo de esta tarjeta'),
               subtitle: Text('Soy el subtitulo de esta tarjeta'),
