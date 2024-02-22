@@ -8,12 +8,12 @@ class AppRoutes {
   static final menuOptions = <MenuOption>[
     MenuOption(
         route: 'listview',
-        name: 'ListView',
-        screen: ListView(),
+        name: 'List View 1',
+        screen: const ListView1(),
         icon: Icons.list),
     MenuOption(
         route: 'listview2',
-        name: 'ListView2',
+        name: 'List View 2',
         screen: const ListView2(),
         icon: Icons.list_alt),
     MenuOption(
@@ -34,13 +34,18 @@ class AppRoutes {
     MenuOption(
         route: 'animation',
         name: 'Animation Screen',
-        screen: AnimatedScreen(),
+        screen: const AnimatedScreen(),
         icon: Icons.animation),
     MenuOption(
         route: 'inputs',
         name: 'Inputs Screen',
         screen: const InputsScreen(),
         icon: Icons.input),
+    MenuOption(
+        route: 'slider',
+        name: 'Slider Screen',
+        screen: const SliderScreen(),
+        icon: Icons.slideshow),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
@@ -59,6 +64,10 @@ class AppRoutes {
     'listview2': (BuildContext context) => const ListView2(),
     'alert': (BuildContext context) => const AlertScreen(),
     'card': (BuildContext context) => const CardScreen(),
+    'avatar': (BuildContext context) => const AvatarScreen(),
+    'animation': (BuildContext context) => const AnimatedScreen(),
+    'inputs': (BuildContext context) => const InputsScreen(),
+    'slider': (BuildContext context) => const SliderScreen(),
   };
 
   static Route onGenerateRoute(settings) {

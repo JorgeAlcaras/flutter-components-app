@@ -52,7 +52,7 @@ class InputsScreen extends StatelessWidget {
         title: const Text('Inputs'),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25),
         child: Form(
           key: formKey,
         child: Column(
@@ -65,7 +65,7 @@ class InputsScreen extends StatelessWidget {
               formValues: formValues,
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             CustomInputField(
                 labelTextV: 'Last Name',
@@ -75,7 +75,7 @@ class InputsScreen extends StatelessWidget {
                 formValues: formValues,
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             CustomInputField(
                 labelTextV: 'Email',
@@ -86,7 +86,7 @@ class InputsScreen extends StatelessWidget {
                 formValues: formValues,
             ),
             
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             CustomInputField(
               labelTextV: 'Password',
@@ -100,10 +100,32 @@ class InputsScreen extends StatelessWidget {
               formValues: formValues,
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
+
+            DropdownButtonFormField(
+                items: const [
+                  DropdownMenuItem(
+                    child: Text('Option 1'),
+                    value: 1,
+                  ),
+                  DropdownMenuItem(
+                    child: Text('Option 2'),
+                    value: 2,
+                  ),
+                  DropdownMenuItem(
+                    child: Text('Option 3'),
+                    value: 3,
+                  ),
+                ],
+                onChanged: (value) {
+                  print(value);
+                },
+            ),
+
+            const SizedBox(height: 20),
             
             ElevatedButton(
-              child: SizedBox(
+              child: const SizedBox(
                 width: double.infinity,
                 child: Center(
                   child: Text('Save'),
