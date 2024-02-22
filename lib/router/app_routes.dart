@@ -18,24 +18,29 @@ class AppRoutes {
         icon: Icons.list_alt),
     MenuOption(
         route: 'alert',
-        name: 'AlertScreen',
+        name: 'Alert Screen',
         screen: const AlertScreen(),
         icon: Icons.notifications),
     MenuOption(
         route: 'card',
-        name: 'CardScreen',
+        name: 'Card Screen',
         screen: const CardScreen(),
         icon: Icons.credit_card),
     MenuOption(
         route: 'avatar',
-        name: 'AvatarScreen',
+        name: 'Avatar Screen',
         screen: const AvatarScreen(),
         icon: Icons.face),
     MenuOption(
-  route: 'animation',
-  name: 'AnimationScreen',
-  screen: AnimatedScreen(),
-  icon: Icons.animation)
+        route: 'animation',
+        name: 'Animation Screen',
+        screen: AnimatedScreen(),
+        icon: Icons.animation),
+    MenuOption(
+        route: 'inputs',
+        name: 'Inputs Screen',
+        screen: const InputsScreen(),
+        icon: Icons.input),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

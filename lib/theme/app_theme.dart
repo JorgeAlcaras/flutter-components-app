@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
 
-  static const Color global = Colors.pink;
+  static const Color global = Colors.blue;
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     primaryColor: global,
@@ -17,6 +17,34 @@ class AppTheme {
         foregroundColor: global,
       ),
     ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: global,
+        ),
+      ),
+
+      inputDecorationTheme: InputDecorationTheme(
+        labelStyle: const TextStyle(
+          color: global,
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(5),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(5),
+          borderSide: BorderSide(
+            color: Colors.red,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(5),
+          borderSide: BorderSide(
+            color: global,
+            width: 2,
+          ),
+        ),
+      ),
   );
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
@@ -33,8 +61,30 @@ class AppTheme {
 
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        foregroundColor: global,
+        foregroundColor: Colors.black,
         backgroundColor: global,
+      ),
+    ),
+
+    inputDecorationTheme: InputDecorationTheme(
+      labelStyle: const TextStyle(
+        color: global,
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(5),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(5),
+        borderSide: BorderSide(
+          color: Colors.red,
+        ),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(5),
+        borderSide: BorderSide(
+          color: global,
+          width: 2,
+        ),
       ),
     ),
   );
